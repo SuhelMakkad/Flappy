@@ -5,7 +5,7 @@
   "background_color": "#2b2b2b",
   "display": "standalone",
   "scope": "/",
-  "start_url": "http://localhost:5500/",
+  "start_url": "https://suhelmakkad.github.io/Flappy/",
   "description": "Blog and Resume for Christine Dodrill",
   "orientation": "any",
   "icons": [

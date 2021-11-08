@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(66, 66, 66);
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  font-family: "Press Start 2P", cursive;
+  user-select: none;
+}
+
+#canvas {
+  display: block;
+}
+
+#score-wrapper {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 2rem;
+  color: antiquewhite;
+  font-size: 1rem;
+  color: black;
+}
+
+#mute-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+#svg-muted {
+  display: none;
+}
+
+.modal {
+  display: none;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.45);
+  padding: 2rem;
+  backdrop-filter: blur(5px);
+  text-align: center;
+}
+
+.modal .title {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.modal .text {
+  font-size: 1rem;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.modal .input {
+  margin-top: 1rem;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  font-family: "Press Start 2P", cursive;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+button.btn {
+  margin-top: 1.75rem;
+  font-family: "Press Start 2P", cursive;
+  text-transform: uppercase;
+  padding: 0.55rem 0.75rem 0.5rem 0.75rem;
+  outline: none;
+  border: none;
+}
+
+.submit-btn {
+  background-color: rgb(148, 154, 235);
+}
+
+.cancel-btn {
+  background-color: rgba(233, 116, 146, 0.562);
+}
+
+.show-leaderboard-btn {
+  background-color: rgb(191, 160, 250);
+}
+
+.back-btn {
+  background-color: rgb(97, 97, 97);
+  color: #fff;
+}
+
+#start-modal {
+  display: block;
+}
+
+#enter-name-modal {
+  max-width: 600px;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+#playersList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#crown {
+  margin-bottom: 0.5rem;
+}
+#playersList li:first-child {
+  color: goldenrod;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}

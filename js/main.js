@@ -27,14 +27,24 @@ const crashAudio = new Audio("./assets/audio/bruh.mp3");
 
 const backgroundLayer1 = new Image();
 backgroundLayer1.src = "./assets/images/background/sky.png";
+backgroundLayer1.width = 2560;
+backgroundLayer1.height = 1440;
 const backgroundLayer2 = new Image();
 backgroundLayer2.src = "./assets/images/background/background_hills.png";
+backgroundLayer2.width = 2560;
+backgroundLayer2.height = 1440;
 const backgroundLayer3 = new Image();
 backgroundLayer3.src = "./assets/images/background/clouds.png";
+backgroundLayer3.width = 2560;
+backgroundLayer3.height = 1440;
 const backgroundLayer4 = new Image();
 backgroundLayer4.src = "./assets/images/background/middle_part.png";
+backgroundLayer4.width = 2560;
+backgroundLayer4.height = 1440;
 const backgroundLayer5 = new Image();
 backgroundLayer5.src = "./assets/images/background/foreground.png";
+backgroundLayer5.width = 2560;
+backgroundLayer5.height = 1440;
 
 const backgroundLayers = [
   new BackgroundLayer(backgroundLayer1, 0.2),

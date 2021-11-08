@@ -13,6 +13,9 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="language" content="English">
     
+    <!-- manifest -->
+    <link rel="manifest" href="./manifest.json">
+
     <!-- title -->
     <title>Flappy</title>
 
@@ -105,10 +108,18 @@
       </div>
     </div>
 
-    <script src="js/score.js"></script>
-    <script src="js/bird.js"></script>
-    <script src="js/pipe.js"></script>
-    <script src="js/backgroundLayer.js"></script>
-    <script src="js/main.js"></script>
+    <script src="./js/score.js"></script>
+    <script src="./js/bird.js"></script>
+    <script src="./js/pipe.js"></script>
+    <script src="./js/backgroundLayer.js"></script>
+    <script src="./js/main.js"></script>
+    
+    <script>
+      if(window.navigator && ('serviceWorker' in navigator)) {
+        navigator.serviceWorker
+                 .register('./js/sw.js')
+                 .then(function() { console.log("Service Worker Registered"); });
+      }
+      </script>
   </body>
 </html>

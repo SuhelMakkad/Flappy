@@ -1,7 +1,11 @@
 const pipeImgDown = new Image();
 pipeImgDown.src = "./assets/images/pipeDown.png";
+pipeImgDown.width = 100;
+pipeImgDown.height = 400;
 const pipeImgUp = new Image();
 pipeImgUp.src = "./assets/images/pipeUp.png";
+pipeImgUp.width = 100;
+pipeImgUp.height = 400;
 
 class Pipe {
   constructor(x, y, width, height, isAbove) {

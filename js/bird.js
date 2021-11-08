@@ -7,6 +7,8 @@ const GRAVITY_FACTOR = 20;
 
 const birdSpriteSheet = new Image();
 birdSpriteSheet.src = "./assets/images/spritesheet.png";
+birdSpriteSheet.width = BIRD_WIDTH;
+birdSpriteSheet.height = BIRD_HEIGHT;
 
 class Bird {
   constructor(x, y, birdSpriteSheet, width, height) {
